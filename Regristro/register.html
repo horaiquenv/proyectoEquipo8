@@ -8,16 +8,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-
   <body>
     <header>
       <a class="logo" href="./index.html">
@@ -25,29 +17,36 @@
       </a>
     </header>
     <main>
-      <form action="">
+      <form action="" method="post" class="form">
         <h2 class="title">Registrarse</h2>
         <div>
           <input type="text" placeholder="Nombre" id="register" />
+          <span class="error">error message</span>
         </div>
         <div>
           <input type="text" placeholder="Apellido" id="apellido" />
+          <span class="error">error message</span>
         </div>
         <div>
           <input type="text" placeholder="Email" id="email" />
+          <span class="error">error message</span>
         </div>
         <div>
           <input type="text" placeholder="Contraseña" id="contraseña" />
+          <span class="error">error message</span>          
         </div>
         <div>
           <input type="text" placeholder="Confirmar contraseña" id="confirmar" />
+          <span class="error">error message</span>
         </div>
         <div>
           <input type="date" placeholder="Fecha de nacimiento dd/mm/aaaa" id="fecha" />
+          <span class="error">error message</span>
         </div>
         <div>
-          <select name="Pais" id="pais">
-            <option value="Pais">Pais</option>
+          <select name="pais" id="pais">
+            <span class="error">error message</span>
+            <option value="">Pais</option>
             <option value="AR">Argentina</option>
             <option value="UY">Uruguay</option>
             <option value="PE">Peru</option>
@@ -57,27 +56,17 @@
           </select>
         </div>
         <div>
-          <input type="checkbox" id="terminos"/>
+          <input type="checkbox"  />
           <span>Acepto los terminos y condiciones</span>
+          <span class="error">error message</span>
         </div>
         <div>
-          <button type="submit">Registrarse</button>
+          <button type="submit" class="button">Registrarse</button>
+        </div>
+        <div>
+          <a href="" class="help">¿Necesitas ayuda?</a>
         </div>
       </form>
     </main>
-    <footer></footer>
-
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
