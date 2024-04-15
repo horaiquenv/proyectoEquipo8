@@ -1,18 +1,28 @@
+/* {
+    margin: 0%;
+    box-sizing: border-box;
+}
+
 body {
     height: 100vh;
     background: linear-gradient(to right top, #24242473, #24242473), url("../assets/fondo\ register.jpg");
     background-size: cover;
     background-position: center;
 
-    .logo {
+    header {
         color: #ffffff;
         height: 8vh;
         padding: 30px;
+    }
+
+    .logo {
+        color: #ffffff;
         text-decoration: none;
         font-weight: 700;
         font-size: 1.2rem;
     }
 }
+
 
 main {
     background-color: rgb(42, 42, 42);
@@ -28,74 +38,262 @@ main {
     font-size: 1.2rem;
 
     .title {
-        color: #ffffff;
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 20px;
     }
+
+    .form {
+        width: 100%;
+        padding: 40px;
+
+        input:not(.check,.button),
+        select {
+            width: 100%;
+            margin-bottom: 10px;
+            height: 40px;
+            padding: 0px 20px;
+            font-size: 1.2rem;
+            border-radius: 20px;
+            border: 2px solid #9f3647;
+            background-color: #333333;
+            outline: none;
+            color: rgb(255, 255, 255);
+        }
+
+        .check {
+            color: #ffffff;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-left: 10px;
+        }
+
+        .button {
+            width: 87%;
+            box-sizing: content-box;
+            background-color: #9f3647;
+            border: 2px solid #9f3647;
+            color: #ffffff;
+            padding: 1rem 1rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 500;
+
+        }
+
+        .help {
+            margin-top: 40px;
+            font-size: 1rem;
+            text-decoration: none;
+            color: #787878;
+            font-weight: 400;
+
+        }
+
+        .error {
+            color: #ff0000;
+            font-size: 0.8rem;
+            margin-top: 0px;
+            margin-bottom: 10px;
+
+        }
+    }
 }
 
-/*seleccionar todos los input menos el checkbox*/
-.form {
-    width: 100%;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    input:not(.check, .boton),
-    select {
-        width: 100%;
-        margin-bottom: 10px;
-        height: 40px;
-        padding: 0px 20px;
-        font-size: 1.2rem;
-        border-radius: 20px;
-        border: 2px solid #9f3647;
-        background-color: #333333;
-        outline: none;
-        color: rgb(255, 255, 255);
-    }
 
-    #terminos {
-        font-size: 0.8rem;
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
 
-        .textoCheck {
-            margin-left: 10px;
+
+
+@media (max-width: 1200px) {
+
+    .body {
+        header{
+            padding: 20px;
+        }
+        .logo {
+            font-size: 1rem;
         }
     }
 
-    .button {
-        width: 87%;
-        box-sizing: content-box;
-        background-color: #9f3647;
-        border: 2px solid #9f3647;
-        color: #ffffff;
-        padding: 1rem 1rem;
-        border-radius: 5px;
-        font-size: 1rem;
-        font-weight: 500;
+    main {
+        width: 95%;
+        padding: 10px 10px;
+        h2{
+            font-size: 2rem;
+        }
+
+        .form {
+            width: 100%;
+            text-align: center;
+
+            input:not(.check,.boton),
+            select {
+                width: 80%;
+                height: 35px;
+                font-size: 1rem;
+            }
+
+            .check {
+                width: 80%;
+                margin: 0 auto;
+                font-size: 0.7rem;
+            }
+
+            .button {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 70%;
+                padding: 0.8rem 0.8rem;
+                font-size: 0.8rem;
+            }
+
+            .help {
+                text-align: left;
+                font-size: 0.8rem;
+            }
+        }
 
     }
+}*/
 
-    .help {
-        margin-top: 40px;
-        font-size: 1rem;
-        text-decoration: none;
-        color: #787878;
-        font-weight: 400;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body{
+    height: 100vh;
+    background:linear-gradient(to right top, #24242473, #24242473) ,url("../assets/fondo\ register.jpg");
+    background-size: cover;
+    background-position: center;
+
+    header{
+        padding: 30px;
+        height: 8vh;
+        .logo{
+            color: #ffffff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
     }
+    
+    main{
+        section{
+            background-color: rgb(42, 42, 42);
+            width: 30%;
+            margin: auto;
+            border-radius: 5px;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            font-size: 1.2rem;
+            .title{
+                color: #ffffff;
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            form{
+                width: 100%;
+                padding: 40px;
+                input:not(.check, .button),select{
+                    width: 100%;
+                    margin-bottom: 10px;
+                    height: 40px;
+                    padding: 0px 20px;
+                    font-size: 1.2rem;
+                    border-radius: 20px;
+                    border: 2px solid #9f3647;
+                    background-color: #333333;
+                    outline: none;
+                    color: #ffffff;
+                } 
+            }
+            .terms{
+                font-size: 0.8rem;
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                .checkLabel{
+                    margin-left: 10px;
+                    color: #787878;
+                }
+            }
+            .button{
+                width: 87%;
+                box-sizing: content-box;
+                background-color: #9f3647;
+                color: #ffffff;
+                padding: 1rem 1rem;
+                border-radius: 5px;
+                border-color: #9f3647;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+            .help{
+                color: #787878;
+                margin-top: 40px;
+                font-size: 1rem;
+                font-weight: 400;
+                text-decoration: none;
+            }
 
-    .error {
-        color: #ff0000;
-        font-size: 0.8rem;
-        margin-top:0px;
-        margin-bottom: 10px;
-       
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    body{
+        header{
+            padding: 20px;
+            .logo{
+                font-size: 1rem;
+            }
+        }
+        main{
+            section{
+                width: 95%;
+                padding: 10px 10px;
+                .title{
+                    font-size: 2rem;
+                }
+                form{
+                    width: 100%;
+                    text-align: center;
+                    input:not(.check, .button),select{
+                        width: 80%;
+                        height: 35px;
+                        font-size: 1rem;
+                    }
+                    .terms{
+                        width: 80%;
+                        margin: 0 auto;
+                        font-size: 0.7rem;
+                        .textLabel{
+                            align-items: start;
+                        }
+                    }
+                    .button{
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        width: 70%;
+                        padding: 0.8rem 0.8rem;
+                        font-size: 0.8rem;
+                    }
+                    .help{
+                        text-align: left;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
     }
 }

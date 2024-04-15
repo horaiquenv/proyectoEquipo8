@@ -17,56 +17,60 @@
       </a>
     </header>
     <main>
-      <form action="" method="post" class="form">
-        <h2 class="title">Registrarse</h2>
-        <div>
-          <input type="text" placeholder="Nombre" id="register" />
-          <span class="error">error message</span>
-        </div>
-        <div>
-          <input type="text" placeholder="Apellido" id="apellido" />
-          <span class="error">error message</span>
-        </div>
-        <div>
-          <input type="text" placeholder="Email" id="email" />
-          <span class="error">error message</span>
-        </div>
-        <div>
-          <input type="text" placeholder="Contraseña" id="contraseña" />
-          <span class="error">error message</span>          
-        </div>
-        <div>
-          <input type="text" placeholder="Confirmar contraseña" id="confirmar" />
-          <span class="error">error message</span>
-        </div>
-        <div>
-          <input type="date" placeholder="Fecha de nacimiento dd/mm/aaaa" id="fecha" />
-          <span class="error">error message</span>
-        </div>
-        <div>
-          <select name="pais" id="pais">
-            <span class="error">error message</span>
-            <option value="">Pais</option>
-            <option value="AR">Argentina</option>
-            <option value="UY">Uruguay</option>
-            <option value="PE">Peru</option>
-            <option value="CH">Chile</option>
-            <option value="BO">Bolivia</option>
-            <option value="CO">Colombia</option>
-          </select>
-        </div>
-        <div>
-          <input type="checkbox"  />
-          <span>Acepto los terminos y condiciones</span>
-          <span class="error">error message</span>
-        </div>
-        <div>
-          <button type="submit" class="button">Registrarse</button>
-        </div>
-        <div>
-          <a href="" class="help">¿Necesitas ayuda?</a>
-        </div>
-      </form>
+      <section>
+        
+        <form action="" method="post" class="form">
+          <h2 class="title">Registrarse</h2>          
+          <div>
+            <input type="text" placeholder="Nombre" id="register" />
+          </div>
+          <div>
+            <input type="text" placeholder="Apellido" id="apellido" />
+          </div>
+          <div>
+            <input type="text" placeholder="Email" id="email" />
+          </div>
+          <div>
+            <input type="text" placeholder="Contraseña" id="contraseña" />
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Confirmar contraseña"
+              id="confirmar"
+            />
+          </div>
+          <div>
+            <input
+              type="date"
+              placeholder="Fecha de nacimiento dd/mm/aaaa"
+              id="fecha"
+            />
+          </div>
+          <div>
+            <select name="pais" id="pais">
+              <option value="">Pais</option>
+              <option value="AR">Argentina</option>
+              <option value="UY">Uruguay</option>
+              <option value="PE">Peru</option>
+              <option value="CH">Chile</option>
+              <option value="BO">Bolivia</option>
+              <option value="CO">Colombia</option>
+            </select>
+          </div>
+          <div class="terms">
+            <input class="check" type="checkbox" />
+            <label class="checkLabel">Acepto los terminos y condiciones</label>
+          </div>
+          <div>
+            <button type="submit" class="button">Registrarse</button>
+          </div>
+          <div>
+            <a href="" class="help">¿Necesitas ayuda?</a>
+          </div>
+        </form>
+      </section>
     </main>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>
