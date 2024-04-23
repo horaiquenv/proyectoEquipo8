@@ -47,7 +47,7 @@ body {
             align-items: center;
             height: 90vh;
             font-size: 1.2rem;
-            animation: popUp 0.5s ease;
+            animation: popUp 1s ease;
 
             .title {
                 color: #ffffff;
@@ -107,6 +107,12 @@ body {
                 text-decoration: none;
             }
 
+            .error{
+                color: #9f3647;
+                margin-top: 40px;
+                font-size: 1rem;
+                font-weight: 500;
+            }
         }
     }
 }
@@ -123,7 +129,7 @@ body {
 
         main {
             section {
-                animation: popUp 0.5s ease;
+                animation: popUp 1s ease;
                 width: 95%;
                 padding: 10px 10px;
 
