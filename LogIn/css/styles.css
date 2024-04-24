@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@keyframes popUp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right top, #24242473, #24242473), url("../assets/fondo\ register.jpg");
+    background-size: cover;
+    background-position: center;
+
+    header {
+        padding: 30px;
+        height: 8vh;
+
+        .logo {
+            color: #ffffff;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+
+    main {
+
+        section {
+            background-color: rgb(42, 42, 42);
+            width: 30%;
+            margin: auto;
+            border-radius: 5px;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            font-size: 1.2rem;
+            animation: popUp 1s ease;
+
+            .title {
+                color: #ffffff;
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            form {
+                width: 100%;
+                padding: 40px;
+
+                input:not(.check, .button),
+                select {
+                    width: 100%;
+                    margin-bottom: 10px;
+                    height: 40px;
+                    padding: 0px 20px;
+                    font-size: 1.2rem;
+                    border-radius: 20px;
+                    border: 2px solid #9f3647;
+                    background-color: #333333;
+                    outline: none;
+                    color: #ffffff;
+                }
+            }
+
+            .button {
+                width: 87%;
+                box-sizing: content-box;
+                background-color: #9f3647;
+                color: #ffffff;
+                padding: 1rem 1rem;
+                border-radius: 5px;
+                border-color: #9f3647;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+
+            .help {
+                color: #787878;
+                margin-top: 40px;
+                font-size: 1rem;
+                font-weight: 400;
+                text-decoration: none;
+            }
+
+            .error{
+                color: #9f3647;
+                margin-top: 40px;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        header {
+            padding: 20px;
+
+            .logo {
+                font-size: 1rem;
+            }
+        }
+
+        main {
+            section {
+                animation: popUp 1s ease;
+                width: 95%;
+                padding: 10px 10px;
+
+                .title {
+                    font-size: 2rem;
+                }
+
+                form {
+                    width: 100%;
+                    text-align: center;
+
+                    input:not(.check, .button),
+                    select {
+                        width: 80%;
+                        height: 35px;
+                        font-size: 1rem;
+                    }
+
+                    .button {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        width: 70%;
+                        padding: 0.8rem 0.8rem;
+                        font-size: 0.8rem;
+                    }
+
+                    .help {
+                        text-align: left;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
