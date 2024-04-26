@@ -75,18 +75,6 @@ body {
                 }
             }
 
-            .terms {
-                font-size: 0.8rem;
-                display: flex;
-                align-items: center;
-                margin-bottom: 20px;
-
-                .checkLabel {
-                    margin-left: 10px;
-                    color: #787878;
-                }
-            }
-
             .button {
                 width: 87%;
                 box-sizing: content-box;
@@ -109,6 +97,7 @@ body {
 
             .error{
                 color: #9f3647;
+                margin-top: 40px;
                 font-size: 1rem;
                 font-weight: 500;
             }
@@ -145,16 +134,6 @@ body {
                         width: 80%;
                         height: 35px;
                         font-size: 1rem;
-                    }
-
-                    .terms {
-                        width: 80%;
-                        margin: 0 auto;
-                        font-size: 0.7rem;
-
-                        .textLabel {
-                            align-items: start;
-                        }
                     }
 
                     .button {

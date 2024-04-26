@@ -12,23 +12,25 @@
   </head>
   <body>
     <header>
-      <a class="logo" href="./index.html">
-        <span>CAC MOVIES</span>
+      <a class="logo" href="../index.html">
+        <span>CAC MOVIES - Registro</span>
       </a>
     </header>
     <main>
-      <section>
-        
+      <section> 
         <form action="" method="post" class="form">
           <h2 class="title">Registrarse</h2>          
           <div>
-            <input type="text" placeholder="Nombre" id="register" />
+            <input type="text" placeholder="Nombre" id="nombre" onchange="return errors()"/>
+            <div class="error" id="error"></div>
           </div>
           <div>
-            <input type="text" placeholder="Apellido" id="apellido" />
+            <input type="text" placeholder="Apellido" id="apellido" onchange="return errors()"/>
+            <div class="error" id="error"></div>
           </div>
           <div>
-            <input type="text" placeholder="Email" id="email" />
+            <input type="email" placeholder="Email" id="email" onchange="return errors()"/>
+            <div class="error" id="error"></div>
           </div>
           <div>
             <input type="password" placeholder="Contraseña" id="contraseña" />
@@ -42,10 +44,8 @@
           </div>
           <div>
             <input
-              type="date"
-              placeholder="Fecha de nacimiento dd/mm/aaaa"
-              id="fecha"
-            />
+              type="date" placeholder="Fecha de nacimiento dd/mm/aaaa" id="fecha" onchange="return errors()"/>
+            <div class="error" id="error"></div>
           </div>
           <div>
             <select name="pais" id="pais">
@@ -57,16 +57,18 @@
               <option value="BO">Bolivia</option>
               <option value="CO">Colombia</option>
             </select>
+            <div class="error" id="error" onchange="return errors()"></div>
           </div>
           <div class="terms">
-            <input class="check" type="checkbox" />
+            <input class="check" type="checkbox" id="check" />
             <label class="checkLabel">Acepto los terminos y condiciones</label>
           </div>
+          <div class="error" id="error"></div>
           <div>
-            <button type="submit" class="button">Registrarse</button>
+            <button type="submit" class="button" onclick="return registro()">Registrarse</button>
           </div>
           <div>
-            <a href="" class="help">¿Necesitas ayuda?</a>
+            <a href="../ayuda/ayuda.html" class="help">¿Necesitas ayuda?</a>
           </div>
         </form>
       </section>
