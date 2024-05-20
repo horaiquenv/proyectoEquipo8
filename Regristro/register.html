@@ -18,33 +18,33 @@
     </header>
     <main>
       <section> 
-        <form action="" method="post" class="form">
+        <form action="" method="post" id="form" class="form">
           <h2 class="title">Registrarse</h2>          
           <div>
-            <input type="text" placeholder="Nombre" id="nombre" onchange="return errors()"/>
-            <div class="error" id="error"></div>
+            <input type="text" placeholder="Nombre" id="nombre"/>
+            <div class="error" id="errorNombre"></div>
           </div>
           <div>
-            <input type="text" placeholder="Apellido" id="apellido" onchange="return errors()"/>
-            <div class="error" id="error"></div>
+            <input type="text" placeholder="Apellido" id="apellido"/>
+            <div class="error" id="errorApellido"></div>
           </div>
           <div>
-            <input type="email" placeholder="Email" id="email" onchange="return errors()"/>
-            <div class="error" id="error"></div>
+            <input type="email" placeholder="Email" id="email"/>
+            <div class="error" id="errorEmail"></div>
           </div>
           <div>
-            <input type="password" placeholder="Contraseña" id="contraseña" onchange="return errors()"/>
-            <div class="error" id="error"></div>
-          </div>
-          <div>
-            <input
-              type="password" placeholder="Confirmar contraseña" id="confirmar" onchange="return errors()"/>
-            <div class="error" id="error"></div>
+            <input type="password" placeholder="Contraseña" id="contraseña"/>
+            <div class="error" id="errorContraseña"></div>
           </div>
           <div>
             <input
-              type="date" placeholder="Fecha de nacimiento dd/mm/aaaa" id="fecha" onchange="return errors()"/>
-            <div class="error" id="error"></div>
+              type="password" placeholder="Confirmar contraseña" id="confirmar"/>
+            <div class="error" id="errorConfirmar"></div>
+          </div>
+          <div>
+            <input
+              type="date" placeholder="Fecha de nacimiento dd/mm/aaaa" id="fecha"/>
+            <div class="error" id="errorFecha"></div>
           </div>
           <div>
             <select name="pais" id="pais">
@@ -56,15 +56,15 @@
               <option value="BO">Bolivia</option>
               <option value="CO">Colombia</option>
             </select>
-            <div class="error" id="error" onchange="return errors()"></div>
+            <div class="error" id="errorPais"></div>
           </div>
           <div class="terms">
             <input class="check" type="checkbox" id="check" />
             <label class="checkLabel">Acepto los terminos y condiciones</label>
           </div>
-          <div class="error" id="error"></div>
+          <div class="error" id="errorCheck"></div>
           <div>
-            <button type="submit" class="button" onclick="return registro()">Registrarse</button>
+            <button type="submit" class="button" onclick="return registro(this.form)">Registrarse</button>
           </div>
           <div>
             <a href="../ayuda/ayuda.html" class="help">¿Necesitas ayuda?</a>
