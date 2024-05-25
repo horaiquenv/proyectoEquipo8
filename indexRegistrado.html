@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAC-Movies</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/css/styleRegistrado.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="./index.html"><i class="fas fa-film"></i>CaC-Movies</a>
+  
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#aclamadas">Tendencias</a>
+              </li>
+               <!-- Aquí mostraremos el nombre de usuario junto al icono -->
+               <div class="usuario-container">
+                <!-- Aquí mostraremos el icono de usuario -->
+                <div id="icono-usuario" class="icono-usuario hidden">
+                    <img src="/assets/ico/avatardefault_92824.ico" alt="Icono Usuario">
+                </div>
+                <!-- Aquí mostraremos el nombre de usuario -->
+                <div id="nombre-usuario" class="nombre-usuario"></div>
+            </div>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+               <!-- boton cierre sesion -->
+               <div class="bot-container">
+                <a href="/index.html">
+                    <input type="submit" value="Cerrar sesión" class="boton-cerrar-sesion">
+                </a>
+            </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  
+    <!-- BANNER CENTRAL MAS TEXTO Y BOTON -->
+    <div class="banner-container" data-aos="fade" data-aos-duration="3000" id="main">
+      <img src="/assets/img/banner-bg.jpg" alt="Banner Image" class="banner-image"/>
+    </div>
+  </header>
+  
+  <main class="container" data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="2000">
+    <!-- Input de búsqueda -->
+    <div class="col-md-8 offset-md-2">
+        <h1>¿Qué estás buscando para ver?</h1>
+        <br>
+        <form class="d-flex">
+        <input type="text" class="form-control me-2" placeholder="Busca tus Películas o Series..." aria-label="Busqueda" >
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+        </form>
+    </div>
+    <br>
+    <!-- Contenedor de películas -->
+    <div class="peliculas-container ">
+        <h1>Las Tendencias de Hoy</h1>
+      <div class="pelicula-carousel">
+        <!-- Imágenes de películas -->
+        <div class="pelicula-item">
+          <a href="./pages/detalles.html"><img src="/assets/img/peli_1.jpg" alt="Título de la Película 1"></a>
+          <div class="pelicula-info">
+            <p class="pelicula-title">The Beekeeper</p>
+          </div>
+        </div>
+        <!-- ... (más elementos de película) ... -->
+        <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_2.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Badland Hunters</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html">
+            <img src="/assets/img/peli_3.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">The Marvels</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_4.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Wonka</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_5.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Aquaman II</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_6.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Migration</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_7.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">60 Minutes</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_8.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Wish</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_9.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">The Masked Saint</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_10.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Due Justice</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_11.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Orion on the Dark</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_12.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Japan</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_13.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Lift</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_14.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Attack</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_15.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Mutant ghost WarGirl</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_16.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Poor Things</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_17.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">The 5</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_18.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Trunk Locked In</p>
+            </div>
+          </div>
+          <div class="pelicula-item">
+            <a href="./pages/detalles.html"><img src="/assets/img/peli_19.jpg" alt="Título de la Película 1"></a>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Anyone But You</p>
+            </div>
+          </div>
+      </div>
+      <!-- Botones para desplazar el carrusel -->
+      <!-- <div class="carousel-buttons">
+          <button id="prev-btn" class="btn-carousel">Anterior</button>
+          <button id="next-btn" class="btn-carousel">Siguiente</button>
+      </div>
+      </div>
+    </div> -->
+    <!-- Botones para desplazar el carrusel -->
+    <div class="carousel-buttons">
+        <button id="prev-btn" class="btn-carousel">Anterior</button>
+        <button id="next-btn" class="btn-carousel">Siguiente</button>
+    </div>
+  </main>
+  
+  <section data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="2000" id="aclamadas" class="peliculasAclamadas aos-init aos-animate">
+    <h3 class="tituloSection">Las más vistas</h3>
+    <div class="contenedorPeliculas">
+        <!-- Aquí puedes agregar las películas aclamadas -->
+        <h3 class="tituloSection">Las más aclamadas</h3>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img class="imgAclamada" src="/assets/img/aclamada_1.jpg" alt="" loading="lazy"></div>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Anyone But You</p>
+            </div>
+            <div class="swiper-slide"><img class="imgAclamada" src="/assets/img/aclamada_2.jpg" alt="" loading="lazy"></div>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Anyone But You</p>
+            </div>
+            <div class="swiper-slide"><img class="imgAclamada" src="/assets/img/aclamada_3.jpg" alt="" loading="lazy"></div>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Anyone But You</p>
+            </div>
+            <div class="swiper-slide"><img class="imgAclamada" src="/assets/img/aclamada_4.jpg" alt="" loading="lazy"></div>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Anyone But You</p>
+            </div>
+            <div class="swiper-slide"><img class="imgAclamada" src="/assets/img/aclamada_5.jpg" alt="" loading="lazy"></div>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Anyone But You</p>
+            </div>
+            <div class="swiper-slide"><img class="imgAclamada" src="/assets/img/aclamada_6.jpg" alt="" loading="lazy"></div>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Anyone But You</p>
+            </div>
+            <div class="swiper-slide"><img class="imgAclamada" src="/assets/img/aclamada_7.jpg" alt="" loading="lazy"></div>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Anyone But You</p>
+            </div>
+            <div class="swiper-slide"><img class="imgAclamada" src="/assets/img/aclamada_8.jpg" alt="" loading="lazy"></div>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Anyone But You</p>
+            </div>
+            <div class="swiper-slide"><img class="imgAclamada" src="/assets/img/aclamada_9.jpg" alt="" loading="lazy"></div>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Anyone But You</p>
+            </div>
+            <div class="swiper-slide"><img class="imgAclamada" src="/assets/img/aclamada_10.jpg" alt="" loading="lazy"></div>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Anyone But You</p>
+            </div>
+            <div class="swiper-slide"><img class="imgAclamada" src="/assets/img/aclamada_11.jpg" alt="" loading="lazy"></div>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Anyone But You</p>
+            </div>
+            <div class="swiper-slide"><img class="imgAclamada" src="/assets/img/aclamada_12.jpg" alt="" loading="lazy"></div>
+            <div class="pelicula-info">
+              <p class="pelicula-title">Anyone But You</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</section>
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure class="logo-container">
+                <a href="#">
+                    <img src="/assets/ico/LogoCaC.ico" alt="Logo de CaC-Movies">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>CaC Movies es una plataforma dedicada a ofrecer una experiencia única de visualización de películas y series en línea. Con una amplia selección de contenido, nos aseguramos de que siempre haya algo nuevo para disfrutar.</p>
+        </div>
+        <div class="box">
+            <h2>SÍGUENOS</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>© 2023 <b>CaC-Movies</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlGA7/0AI7+V+QmUpLmPKpbt8AeI2jF/aPuh/tTeSjjm2RjKXQ2BfiwJ4M" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGEntered contentomfqJA50QVS22v2v9Ky27wbl8k3KJXK5ZTH92i9tZrENx5e05m1o" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/js/nombreUsuario.js"></script>
+</body>
+</html>
