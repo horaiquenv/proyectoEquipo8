@@ -24,14 +24,14 @@ async function getPopularMovies() {
             chunk.forEach(movie => {
                 const movieCard = `
             <div class="col">
-            <a href="./pages/detalles.html">
                 <div class="card h-100 movie-card"> <!-- Añadir la clase 'movie-card' a la tarjeta -->
                   <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="card-img-top" alt="${movie.title}">
                   <div class="card-body">
+                      <a href="./pages/detalles.html">
                     <h5 class="card-title">${movie.title}</h5>
+                    </a>
                   </div>
                 </div>
-                </a>
               </div>
           `;
                 movieRow.innerHTML += movieCard;
