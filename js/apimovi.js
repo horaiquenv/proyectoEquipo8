@@ -25,7 +25,7 @@ async function getPopularMovies() {
                 const movieCard = `
             <div class="col">
                 <div class="card h-100 movie-card"> <!-- Añadir la clase 'movie-card' a la tarjeta -->
-                <a href="./pages/detalles.html">
+                <a href="../pages/detalles.html">
                   <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" class="card-img-top" alt="${movie.title}"></a>
                   <div class="card-body">
                     <h5 class="card-title">${movie.title}</h5>
